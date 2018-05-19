@@ -1,9 +1,23 @@
 Vue.component('festivaltable', {
-    template: '<div><a :href="festi.Website">{{festi.Name}}</a></div>',
+    template: '<table class="table table-bordered table-hover table-condensed"> '
+        + '<tbody><tr><td>Name</td></tr>'
+        + '<tr>'
+        + '<festirow v-for="festi in festidata" :festi="festi" :key="festi.Name"></festirow>'
+        + '</tr></tbody></table>',
+    props: {
+        festidata:{
+            type: Array,
+            default: []
+        }
+    }
+});
+
+Vue.component('festirow', {
+    template: '<tr><a :href="festi.Website">{{festi.Name}}</a></tr>',
     props: {
         festi:{
             type: Object,
-            default: null
+            default: {}
         }
     }
 });

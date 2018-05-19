@@ -75,7 +75,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Map</h2>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1r7D6ot3pYLQ_EzNalRJnU_3HYwozqIik" width="800" height="600"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1r7D6ot3pYLQ_EzNalRJnU_3HYwozqIik" width="800" height="600" center="47.273285, 124.515024" zoom="5"></iframe>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
         <div class="mx-auto">
           <h2>List</h2>
           <div id="app">
-            <festivaltable v-for="festi in data" :festi="festi"></festivaltable>
+            <festivaltable :festidata="data"></festivaltable>
           </div>
         </div>
       </div>
