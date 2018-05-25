@@ -40,7 +40,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">Festivals Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">List of Events</a>
+              <a class="nav-link js-scroll-trigger" href="#download">Agenda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -60,8 +60,8 @@
               <p class="intro-text">Love Gypsy Jazz but struggling to find festivals?
                 <br>Gypsy Jazz Agenda lists most of the festivals worldwide!
                 <!-- TODO - find class for smooth transition - nav-link js-scroll-trigger ? -->
-                <br>Have a look at the <a href="#about">Map</a> or <a href="#download">List of events</a>.<br>
-                And if you've noticed something's missing, <a  href="#contact">let me know</a>!
+                <br>Start exploring the <a class="js-scroll-trigger" href="#about">Map</a> or have a look at the <a class="js-scroll-trigger" href="#download">Agenda</a>.<br>
+                And if you've noticed something's missing, <a class="js-scroll-trigger" href="#contact">let me know</a>!
               </p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -76,10 +76,17 @@
     <section id="about" class="content-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Map</h2>
+          <!-- <div class="col-lg-8 mx-auto"> -->
+          <div class="mx-auto">
+            <h2>Festivals Map</h2>
             <!-- Google Map -->
-            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1r7D6ot3pYLQ_EzNalRJnU_3HYwozqIik" width="800" height="600" center="47.273285, 124.515024" zoom="5"></iframe> -->
+            <p>
+              View in <a target="_blank" href="https://www.google.com/maps/d/viewer?mid=1r7D6ot3pYLQ_EzNalRJnU_3HYwozqIik&ll=47.75261289886664%2C3.8230838875000472&z=5">Full Screen</a>
+            </p>
+            <!-- TODO - hide the map on small devices and only leave the Full Screen link -->
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1r7D6ot3pYLQ_EzNalRJnU_3HYwozqIik" width="1000" height="600" center="47.273285, 124.515024" zoom="5"></iframe>
+            </div>
             
             <!-- DataWrapper Map (not working - check if need to be enabled on the admin page?) -->
             <!-- <iframe id="datawrapper-chart-0hMhq" src="//datawrapper.dwcdn.net/0hMhq/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["0hMhq"]={},window.datawrapper["0hMhq"].embedDeltas={"100":400,"200":400,"300":400,"400":400,"500":400,"700":400,"800":400,"900":400,"1000":400},window.datawrapper["0hMhq"].iframe=document.getElementById("datawrapper-chart-0hMhq"),window.datawrapper["0hMhq"].iframe.style.height=window.datawrapper["0hMhq"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["0hMhq"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("0hMhq"==b)window.datawrapper["0hMhq"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script> -->
@@ -88,49 +95,225 @@
       </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Download Section (actually Agenda Section) -->
     <section id="download" class="download-section content-section text-center">
       <div class="container">
         <div class="mx-auto">
-          <h2>List</h2>
+          <h2>Agenda 2018</h2>
           <div id="app">
             <!-- <festivaltable :festidata="data"></festivaltable> -->
             <div class="table-responsive-lg">
-              <table class="table table-bordered table-hover table-condensed table-striped table-dark table-sm">
+              <table class="table table-bordered table-hover table-condensed table-striped table-dark">
               <caption>List of Gypsy Jazz festivals</caption>
                   <thead>
-                    <tr><td>Name</td><td>Start date</td><td>End date</td><td>Website</td><td>Country</td><td>Region</td><td>Town</td><td>Address</td><td>Price</td><td>Camping</td><td>Note</td></tr>
+                    <tr><th scope="col">Name</th><th scope="col">Start date</th><th scope="col">End date</th><th scope="col">Country</th><th scope="col">Town</th></tr>
                   </thead>
 
                   <tbody>
-                    <tr><td>Jazz à Zilli</td><td>2018-06-15</td><td>2018-06-17</td><td>www.festivaljazzmanouche.org</td><td>France</td><td>Grand Est</td><td>Zillisheim</td><td>Salle polyvalente de Zillisheim - Rue de Didenheim - 68720 Zillisheim</td><td>0</td><td></td><td>Le festival recherche des bénévoles</td></tr>
-                    <tr><td>Jazz à Pref’</td><td>2018-05-10</td><td>2018-05-13</td><td>http://www.musicscool.fr</td><td>France</td><td>Pays de la Loire</td><td>Préfailles</td><td>"31 Grande Rue</td><td> Préfailles"</td><td></td><td></td><td></td></tr>
-                    <tr><td>Festival Mazeres</td><td>2018-08-10</td><td>2018-08-12</td><td>https://www.festivalmazeres.fr</td><td>France</td><td>Occitanie</td><td>Mazeres</td><td></td><td>55</td><td></td><td></td></tr>
-                    <tr><td>Jazz festival Forbach</td><td>2018-06-02</td><td>2018-06-03</td><td>http://www.jazzfestivalforbach.fr</td><td>France</td><td>Grand Est</td><td>Forbach</td><td></td><td>60</td><td></td><td></td></tr>
-                    <tr><td>Django sur Lennon</td><td>2017-10-27</td><td>2017-10-30</td><td>https://www.facebook.com/djangosurlennon/</td><td>Ireland</td><td></td><td>Ramelton</td><td>"Town Hall</td><td> Ramelton Co Donegal</td><td> Ireland"</td><td></td><td></td><td></td></tr>
-                    <tr><td>Django Amsterdam</td><td>2018-01-26</td><td>2018-01-28</td><td>http://djangoamsterdam.com/</td><td>Netherlands</td><td></td><td>Amsterdam</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Django l'H</td><td>2018-11-19</td><td>2018-11-25</td><td>https://www.facebook.com/DjangoLH/</td><td>Spain</td><td></td><td>Barcelona</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Pennabilli Django Festival</td><td>2017-12-28</td><td>2017-12-30</td><td>http://www.pennabillidjangofestival.com/</td><td>Italy</td><td></td><td>Pennabilli</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>OZ Manouche</td><td>2017-11-23</td><td>2017-11-26</td><td>http://www.ozmanouche.com/</td><td>Australia</td><td></td><td>Brisbane</td><td>"Brisbane Jazz Club</td><td> 1 Annie St</td><td> Kangaroo Point QLD 4169</td><td> Australia"</td><td></td><td></td><td></td></tr>
-                    <tr><td>St. Louis Gypsy Jazz Festival</td><td>2018-10-26</td><td>2018-10-28</td><td>https://www.facebook.com/StLouisGypsyJazzFestival/</td><td>USA</td><td></td><td>St. Louis</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Festival de Jazz Manouche Piracicaba</td><td>2018-10-19</td><td>2018-10-21</td><td>http://www.hotclubdepiracicaba.com.br/</td><td>Brasil</td><td></td><td>Piracicaba</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Django Reinhardt Gipsy Festival NL</td><td>2018-10-19</td><td>2018-10-21</td><td>https://www.facebook.com/Django-Reinhardt-Gipsy-Festival-NL-282608375428012/</td><td>Netherlands</td><td></td><td>The Hague</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Django by the Sea</td><td>2018-10-04</td><td>2018-10-07</td><td>http://www.djangobythesea.com/</td><td>USA</td><td></td><td>Portsmouth</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Djangofest North West</td><td>2018-09-19</td><td>2018-09-23</td><td>https://www.djangofestnw.com/</td><td>USA</td><td></td><td>Whidbey Island</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Samois Sur Ticino</td><td>2018-09-23</td><td>2018-09-25</td><td>https://www.facebook.com/events/1580843758884168/</td><td>Italy</td><td></td><td>Giussago</td><td>"Cascina S. Colombanino</td><td> 27010 Giussago PV</td><td> Italy"</td><td></td><td></td><td></td></tr>
-                    <tr><td>Djangofest Athens</td><td>2018-09-28</td><td>2018-09-30</td><td>https://www.facebook.com/djangofest.greece/</td><td>Greece</td><td></td><td>Athens</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Midwest Gypsy Swing Fest</td><td>2018-09-14</td><td>2018-09-15</td><td>http://midwestgypsyswingfest.com/</td><td>USA</td><td></td><td>Madison</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Chicago Gypsy Jazz Festival</td><td>2018-09-14</td><td>2018-09-16</td><td>https://www.facebook.com/events/1943532989193141/</td><td>USA</td><td></td><td>Chicago</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Gypsy Days</td><td>2018-08-25</td><td>2018-08-27</td><td>https://www.facebook.com/events/1943532989193141/</td><td>Denmark</td><td></td><td>Follenslev</td><td>Vesterlyng Camping</td><td></td><td></td><td></td></tr>
-                    <tr><td>Django Reinhardt Fest - Tilburg</td><td>2018-08-26</td><td>2018-08-27</td><td>https://www.facebook.com/djangoreinhardtfest/</td><td>Netherlands</td><td></td><td>Tilburg</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Raduno Manouche</td><td>2018-08-24</td><td>2018-08-26</td><td>http://www.radunomanouche.it/programma2016.html</td><td>Italy</td><td>Sicily</td><td>Petralia</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Paris Django Camp</td><td>2018-07-06</td><td>2018-07-08</td><td>https://www.facebook.com/Paris-Django-Camp-191381641273069/</td><td>France</td><td></td><td>Paris</td><td></td><td></td><td>No</td><td></td></tr>
-                    <tr><td>The Los Angeles Django Reinhardt Festival</td><td>2018-07-14</td><td>2018-07-15</td><td>https://www.facebook.com/events/1836461403237195/</td><td>USA</td><td>California</td><td>Los Angeles</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Django Reinhardt Festival - Hildesheim</td><td>2018-07-07</td><td>2018-07-08</td><td>https://festival-django-reinhardt.de/</td><td>Germany</td><td></td><td>Hildesheim</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Festival des Puces</td><td>2018-06-15</td><td>2018-06-18</td><td>http://www.festivaldespuces.com/</td><td>France</td><td></td><td>Paris</td><td></td><td></td><td>No</td><td></td></tr>
-                    <tr><td>Festival Django Reinhardt - Samois</td><td>2018-06-30</td><td>2018-07-09</td><td>http://www.festivaldjangoreinhardt.com/</td><td>France</td><td>Ile-de-France</td><td>Samois-Sur-Seine</td><td></td><td></td><td>Yes</td><td></td></tr>
-                    <tr><td>March Manouche</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>Django in June</td><td>2018-06-11</td><td>2018-06-17</td><td>http://djangoinjune.com/</td><td>USA</td><td>Massachusets</td><td>Northampton</td><td></td><td></td><td></td><td></td></tr>
+                    <!-- TODO - make the whole row clickable? -->
+                      <tr>
+                          <td><a target="_blank" href="http://djangoamsterdam.com/">Django Amsterdam</a></td>
+                          <td>26 January</td>
+                          <td>28 January</td>
+                          <td>Netherlands</td>
+                          <td>Amsterdam</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.marchmanouche.co.uk/">March Manouche</a></td>
+                          <td>23 March</td>
+                          <td>23 March</td>
+                          <td>UK</td>
+                          <td>Menai Bridge</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.musicscool.fr">Jazz à Pref’</a></td>
+                          <td>10 May</td>
+                          <td>13 May</td>
+                          <td>France</td>
+                          <td>Préfailles</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.jazzfestivalforbach.fr">Jazz festival Forbach</a></td>
+                          <td>2 June</td>
+                          <td>3 June</td>
+                          <td>France</td>
+                          <td>Forbach</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://djangoinjune.com/">Django in June</a></td>
+                          <td>11 June</td>
+                          <td>17 June</td>
+                          <td>USA</td>
+                          <td>Northampton</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="www.festivaljazzmanouche.org">Jazz à Zilli</a></td>
+                          <td>15 June</td>
+                          <td>17 June</td>
+                          <td>France</td>
+                          <td>Zillisheim</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.festivaldespuces.com/">Festival des Puces</a></td>
+                          <td>15 June</td>
+                          <td>18 June</td>
+                          <td>France</td>
+                          <td>Paris</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.festivaldjangoreinhardt.com/">Festival Django Reinhardt - Samois</a></td>
+                          <td>30 June</td>
+                          <td>9 July</td>
+                          <td>France</td>
+                          <td>Samois-Sur-Seine</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/Paris-Django-Camp-191381641273069/">Paris Django Camp</a></td>
+                          <td>6 July</td>
+                          <td>8 July</td>
+                          <td>France</td>
+                          <td>Paris</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://festival-django-reinhardt.de/">Django Reinhardt Festival - Hildesheim</a></td>
+                          <td>7 July</td>
+                          <td>8 July</td>
+                          <td>Germany</td>
+                          <td>Hildesheim</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/events/1836461403237195/">The Los Angeles Django Reinhardt Festival</a></td>
+                          <td>14 July</td>
+                          <td>15 July</td>
+                          <td>USA</td>
+                          <td>Los Angeles</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.marchmanouche.co.uk/django-camp-2018.html">Django Camp</a></td>
+                          <td>27 July</td>
+                          <td>29 July</td>
+                          <td>UK</td>
+                          <td>Menai Bridge</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.festivalmazeres.fr">Festival Mazeres</a></td>
+                          <td>10 August</td>
+                          <td>12 August</td>
+                          <td>France</td>
+                          <td>Mazeres</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.radunomanouche.it/programma2016.html">Raduno Manouche</a></td>
+                          <td>24 August</td>
+                          <td>26 August</td>
+                          <td>Italy</td>
+                          <td>Petralia</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/events/1943532989193141/">Gypsy Days</a></td>
+                          <td>25 August</td>
+                          <td>27 August</td>
+                          <td>Denmark</td>
+                          <td>Follenslev</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/djangoreinhardtfest/">Django Reinhardt Fest - Tilburg</a></td>
+                          <td>26 August</td>
+                          <td>27 August</td>
+                          <td>Netherlands</td>
+                          <td>Tilburg</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://midwestgypsyswingfest.com/">Midwest Gypsy Swing Fest</a></td>
+                          <td>14 September</td>
+                          <td>15 September</td>
+                          <td>USA</td>
+                          <td>Madison</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/events/1943532989193141/">Chicago Gypsy Jazz Festival</a></td>
+                          <td>14 September</td>
+                          <td>16 September</td>
+                          <td>USA</td>
+                          <td>Chicago</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.djangofestnw.com/">Djangofest North West</a></td>
+                          <td>19 September</td>
+                          <td>23 September</td>
+                          <td>USA</td>
+                          <td>Whidbey Island</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/events/1580843758884168/">Samois Sur Ticino</a></td>
+                          <td>23 September</td>
+                          <td>25 September</td>
+                          <td>Italy</td>
+                          <td>Giussago</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://djangosurlennon.com/">Django sur Lennon</a></td>
+                          <td>27 September</td>
+                          <td>29 September</td>
+                          <td>Ireland</td>
+                          <td>Ramelton</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/djangofest.greece/">Djangofest Athens</a></td>
+                          <td>28 September</td>
+                          <td>30 September</td>
+                          <td>Greece</td>
+                          <td>Athens</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.djangobythesea.com/">Django by the Sea</a></td>
+                          <td>4 October</td>
+                          <td>7 October</td>
+                          <td>USA</td>
+                          <td>Portsmouth</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.hotclubdepiracicaba.com.br/">Festival de Jazz Manouche Piracicaba</a></td>
+                          <td>19 October</td>
+                          <td>21 October</td>
+                          <td>Brasil</td>
+                          <td>Piracicaba</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/Django-Reinhardt-Gipsy-Festival-NL-282608375428012/">Django Reinhardt Gipsy Festival NL</a></td>
+                          <td>19 October</td>
+                          <td>21 October</td>
+                          <td>Netherlands</td>
+                          <td>The Hague</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/StLouisGypsyJazzFestival/">St. Louis Gypsy Jazz Festival</a></td>
+                          <td>26 October</td>
+                          <td>28 October</td>
+                          <td>USA</td>
+                          <td>St. Louis</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="https://www.facebook.com/DjangoLH/">Django l&#39;H</a></td>
+                          <td>19 November</td>
+                          <td>25 November</td>
+                          <td>Spain</td>
+                          <td>Barcelona</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.ozmanouche.com/">OZ Manouche</a></td>
+                          <td>23 November</td>
+                          <td>26 November</td>
+                          <td>Australia</td>
+                          <td>Brisbane</td>
+                        </tr>
+                        <tr>
+                          <td><a target="_blank" href="http://www.pennabillidjangofestival.com/">Pennabilli Django Festival</a></td>
+                          <td>28 December</td>
+                          <td>30 December</td>
+                          <td>Italy</td>
+                          <td>Pennabilli</td>
+                        </tr>
                   </tbody>
                 </table>
             </div>
