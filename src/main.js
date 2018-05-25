@@ -1,5 +1,5 @@
 Vue.component('festivaltable', {
-    template: '<table class="table table-bordered table-hover table-condensed"> '
+    template: '<table class="table table-bordered table-hover table-condensed table-striped table-dark"> '
         + '<tbody><tr><td>Name</td></tr>'
         + '<tr>'
         + '<festirow v-for="festi in festidata" :festi="festi" :key="festi.Name"></festirow>'
