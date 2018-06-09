@@ -281,3 +281,13 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+@media screen and (max-width: 600px) {
+  #festivals-google-maps {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    display: none;
+  }
+}
+
