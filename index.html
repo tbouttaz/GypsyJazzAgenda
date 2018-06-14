@@ -40,10 +40,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Festivals Map</a>
+              <a class="nav-link js-scroll-trigger" href="#festivals-map">Festivals Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Agenda</a>
+              <a class="nav-link js-scroll-trigger" href="#agenda">Agenda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -63,10 +63,12 @@
               <p class="intro-text">Love Gypsy Jazz but struggling to find festivals?
                 <br/>Gypsy Jazz Agenda lists most of the festivals worldwide!
 
-                <br/>Start exploring the <a class="js-scroll-trigger" href="#about">Map</a> or have a look at the <a class="js-scroll-trigger" href="#download">Agenda</a>.<br/>
+                <br/>Start exploring the <a class="js-scroll-trigger" href="#festivals-map">Map</a> or have a look at the <a class="js-scroll-trigger" href="#agenda">Agenda</a>.<br/>
                 And if you've noticed something's missing, <a class="js-scroll-trigger" href="#contact">let me know</a>!
               </p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
+
+              <!-- Scroll-down link to next section -->
+              <a href="#festivals-map" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -76,7 +78,7 @@
     </header>
 
     <!-- Map Section -->
-    <section id="about" class="content-section text-center">
+    <section id="festivals-map" class="content-section text-center">
       <div class="container">
         <div class="row">
           <!-- <div class="col-lg-8 mx-auto"> -->
@@ -94,13 +96,17 @@
             
             <!-- DataWrapper Map (not working - check if need to be enabled on the admin page?) -->
             <!-- <iframe id="datawrapper-chart-0hMhq" src="//datawrapper.dwcdn.net/0hMhq/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["0hMhq"]={},window.datawrapper["0hMhq"].embedDeltas={"100":400,"200":400,"300":400,"400":400,"500":400,"700":400,"800":400,"900":400,"1000":400},window.datawrapper["0hMhq"].iframe=document.getElementById("datawrapper-chart-0hMhq"),window.datawrapper["0hMhq"].iframe.style.height=window.datawrapper["0hMhq"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["0hMhq"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("0hMhq"==b)window.datawrapper["0hMhq"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script> -->
+            <!-- Scroll-down link to next section -->
+            <a href="#agenda" class="btn btn-circle js-scroll-trigger">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Download Section (actually Agenda Section) -->
-    <section id="download" class="download-section content-section text-center">
+    <!-- Agenda Section -->
+    <section id="agenda" class="download-section content-section text-center">
       <div class="container">
         <div class="mx-auto">
           <h2>Agenda 2018</h2>
@@ -320,8 +326,12 @@
                         </tr>
                   </tbody>
                 </table>
+              </div>
             </div>
-          </div>
+          <!-- Scroll-down link to next section -->
+          <a href="#contact" class="btn btn-circle js-scroll-trigger">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -334,28 +344,21 @@
             <h2>Contact Me</h2>
             <p>
               Your Gypsy Jazz event isn't listed here? 
-              <script>mail2("tom.jazzmanouche","gmail",0,"","Let me know")</script>
-              and I will add it!
-              
-              <!-- TODO - add google Form link -->
+              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScmi0kic4pbrWH-cy1cuQHT1X1m6z4us8bc0ctGFk_fvjb-FA/viewform?usp=sf_link">Fill in this form</a> 
+              and I will add it!<br />
+              Or if you've noticed something wrong, <script>mail2("tom.jazzmanouche","gmail",0,"","send me an email.")</script>
             </p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                <a target="_blank" href="https://twitter.com/LaBouboutte" class="btn btn-default btn-lg">
                   <i class="fa fa-twitter fa-fw"></i>
                   <span class="network-name">Twitter</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                <a target="_blank" href="https://github.com/tbouttaz/GypsyJazzAgenda" class="btn btn-default btn-lg">
                   <i class="fa fa-github fa-fw"></i>
                   <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
                 </a>
               </li>
             </ul>
