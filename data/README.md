@@ -5,7 +5,11 @@ Pretty basic at the moment: the datasource is a spreadsheet.
 Refresh data process:
 
 1. Export spreadsheet to CSV
+ - Copy rows to **Export view** tab
+ - Change dates format to **Day Month**
+
 2. Load CSV in http://www.convertcsv.com/csv-to-html.htm
+
 3. Use this template for HTML table conversion:
 ```
 <tr>
