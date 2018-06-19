@@ -43,12 +43,12 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;
+  color: #d6bc3a;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #8d7a1d;
 }
 
 #mainNav {
@@ -181,12 +181,12 @@ a:focus, a:hover {
 
 .content-section {
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/jammers.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -201,8 +201,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
   #map {
     height: 350px;
@@ -220,16 +220,16 @@ a:focus, a:hover {
 }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: #d6bc3a;
+  border: 1px solid #d6bc3a;
   background-color: transparent;
 }
 
 .btn-default:focus, .btn-default:hover {
   color: black;
-  border: 1px solid #42DCA3;
+  border: 1px solid #d6bc3a;
   outline: none;
-  background-color: #42DCA3;
+  background-color: #d6bc3a;
 }
 
 ul.banner-social-buttons {
@@ -282,7 +282,7 @@ img::-moz-selection {
   background: transparent;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   #festivals-google-maps {
     visibility: hidden;
     clear: both;
@@ -290,4 +290,3 @@ img::-moz-selection {
     display: none;
   }
 }
-
