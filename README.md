@@ -1,36 +1,29 @@
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
+# [Gypsy Jazz Agenda](www.gypsyjazzagenda.com)
+The purpose of this website is to help Gypsy Jazz aficionados find events to attend, and meet other musicians to share their passion.
+![GypsyJazzAgenda Home](https://raw.githubusercontent.com/tbouttaz/GypsyJazzAgenda/master/data/img/home.png)
 
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[Gypsy Jazz Agenda](www.gypsyjazzagenda.com) tries to list most events worldwide:
+ - Festivals
+ - Masterclass
+ - Jam sessions
 
-## Preview
+## Features
 
-[![Grayscale Preview](https://startbootstrap.com/assets/img/templates/grayscale.jpg)](https://blackrockdigital.github.io/startbootstrap-grayscale/)
+### Map
+Interactive map with geolocated events worldwide (click on each item for more info about that event)
+![GypsyJazzAgenda Map](https://raw.githubusercontent.com/tbouttaz/GypsyJazzAgenda/master/data/img/map.png)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-grayscale/)**
+### Agenda
+Chronological list of events with start/end date, location and a link to the event's website
+![GypsyJazzAgenda Map](https://raw.githubusercontent.com/tbouttaz/GypsyJazzAgenda/master/data/img/agenda.png)
 
-## Status
+### Form
+[Events form](https://docs.google.com/forms/d/e/1FAIpQLScmi0kic4pbrWH-cy1cuQHT1X1m6z4us8bc0ctGFk_fvjb-FA/viewform) to add new events to GypsyJazzAgenda
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-grayscale/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-grayscale.svg)](https://www.npmjs.com/package/startbootstrap-grayscale)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-grayscale)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-grayscale?type=dev)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/grayscale/)
-* Install via npm: `npm i startbootstrap-grayscale`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-grayscale.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-grayscale)
+## Design
+This site is based on the MIT licensed Bootstrap template: **[Grayscale](https://startbootstrap.com/template-overviews/grayscale/)**
 
 ## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
 
 After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
@@ -43,29 +36,9 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 - `gulp minify-js` minifies the themes JS file
 - `gulp copy` copies dependencies from node_modules to the vendor directory
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
-
-## Custom Builds
-
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+#### Data Management
+See [this section](https://github.com/tbouttaz/GypsyJazzAgenda/tree/test/static-node-server/data)
 
 ## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+**Gypsy Jazz Agenda** was created by and is maintained by **[Thomas Bouttaz](http://www.thomasbouttaz.info/)** to help Gypsy Jazz aficionados find events to attend, and meet other musicians to share their passion.
