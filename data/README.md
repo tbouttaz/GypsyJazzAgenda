@@ -20,3 +20,10 @@ Refresh data process:
 ```
 
 4. Replace the *tbody* in index.html
+
+----
+Map
+===
+
+1. Add Layer in Google My Maps --> Import CSV
+2. Embed on my site
