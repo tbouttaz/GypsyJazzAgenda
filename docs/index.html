@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134279378-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134279378-2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="List of Gypsy Jazz festivals">
+    <meta name="author" content="Thomas la Bouboutte">
+
+    <title>Gypsy Jazz Events</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- Hidding email -->
+    <script src="js/email.js"></script>
+
+    <!-- TODO - add fav icon -->
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#festivals-map">Festivals Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#agenda">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Gypsy Jazz Events</h1>
+              <p class="intro-text">Love Gypsy Jazz but struggling to find live events?
+                <br/>Gypsy Jazz Events lists most of the festivals worldwide!
+
+                <br/>Start exploring the <a class="js-scroll-trigger" href="#festivals-map">Map</a> or have a look at the <a class="js-scroll-trigger" href="#agenda">Agenda</a>.<br/>
+                And if you've noticed something's missing, <a class="js-scroll-trigger" href="#contact">let me know</a>!
+              </p>
+
+              <!-- Scroll-down link to next section -->
+              <a href="#festivals-map" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Map Section -->
+    <section id="festivals-map" class="content-section festival-map-section text-center">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-8 mx-auto"> -->
+          <div class="mx-auto">
+            <h2>Festivals Map</h2>
+            <!-- Google Map -->
+            <!-- TODO - hide the map on small devices and only leave the Full Screen link -->
+            <div id="festivals-google-maps" class="google-maps">
+              <iframe src="https://www.google.com/maps/d/embed?mid=15xvhdDtevoF0fyHPStUnHRZhkDmsCap2" width="1000" height="600" ></iframe>
+            </div>
+            <div>
+              <!-- TODO - would be better if the map was better centered. Move link or reduice padding? -->
+              View in <a target="_blank" href="https://www.google.com/maps/d/viewer?mid=15xvhdDtevoF0fyHPStUnHRZhkDmsCap2">Full Screen</a>
+            </div>
+            
+            <!-- DataWrapper Map (not working - check if need to be enabled on the admin page?) -->
+            <!-- <iframe id="datawrapper-chart-0hMhq" src="//datawrapper.dwcdn.net/0hMhq/1/" scrolling="no" frameborder="0" allowtransparency="true" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["0hMhq"]={},window.datawrapper["0hMhq"].embedDeltas={"100":400,"200":400,"300":400,"400":400,"500":400,"700":400,"800":400,"900":400,"1000":400},window.datawrapper["0hMhq"].iframe=document.getElementById("datawrapper-chart-0hMhq"),window.datawrapper["0hMhq"].iframe.style.height=window.datawrapper["0hMhq"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["0hMhq"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("0hMhq"==b)window.datawrapper["0hMhq"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script> -->
+            <!-- Scroll-down link to next section -->
+            <a href="#agenda" class="btn btn-circle js-scroll-trigger">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section id="agenda" class="download-section content-section text-center">
+      <div class="container">
+        <div class="mx-auto">
+          <h2>Agenda</h2>
+          <div id="app">
+            <!-- <festivaltable :festidata="data"></festivaltable> -->
+            <div class="table-responsive-lg">
+              <table class="table table-bordered table-hover table-condensed table-striped table-dark">
+              <caption>List of Gypsy Jazz festivals</caption>
+                  <thead>
+                    <tr><th scope="col">Name</th><th scope="col">Date</th><th scope="col">Country</th><th scope="col">Town</th></tr>
+                  </thead>
+
+                  <tbody>
+                    <!-- TODO - make the whole row clickable? -->
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/Swing-Gitano-Festival-Quito-423398821438297/">Swing Gitano Festival Quito</a></td>
+                      <td>Mid January</td>
+                      <td>Ecuador</td>
+                      <td>Quito</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://djangofolllies.be/">Djangofolllies</a></td>
+                      <td>Mid January</td>
+                      <td>Belgium</td>
+                      <td>Bruxelles</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/pg/festivaldemusicadjangoreinhardtchile">Festival de Música Django Reinhardt Chile</a></td>
+                      <td>End of January</td>
+                      <td>Chile</td>
+                      <td>Santiago</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/126972671337741/">Django Festival Cosmopolite</a></td>
+                      <td>End of January</td>
+                      <td>Norway</td>
+                      <td>Oslo</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.evensi.us/15th-annual-django-reinhardt-festival-fw-arts-avenue/234898048">Annual Django Reinhardt Festival: Fort Worth</a></td>
+                      <td>End of January</td>
+                      <td>USA</td>
+                      <td>Fort Worth</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangoamsterdam.com/">Django Amsterdam</a></td>
+                      <td>End of January</td>
+                      <td>Netherlands</td>
+                      <td>Amsterdam</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://midwestgypsyswingfest.com/">Midwest Gypsy Swing Fest</a></td>
+                      <td>Mid February</td>
+                      <td>USA</td>
+                      <td>Madison</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/pg/CharmCityDjangoJazzfest">Charm City Django Jazz Festival</a></td>
+                      <td>End of February</td>
+                      <td>USA</td>
+                      <td>Baltimore</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.timkliphuis.com/news-1/2018/3/21/2nd-grappelli-camp-in-cape-town">Grappelli Camp in Cape Town</a></td>
+                      <td>Early March</td>
+                      <td>South Africa</td>
+                      <td>Cape Town</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://m.facebook.com/Taipei-GypsyJazz-Festival-175886059879499/">Taipen Gypsy jazz festival</a></td>
+                      <td>Mid March</td>
+                      <td>Taiwan</td>
+                      <td>Taipei</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.marchmanouche.co.uk/">March Manouche</a></td>
+                      <td>End of March</td>
+                      <td>UK</td>
+                      <td>Menai Bridge</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://victoriadjangofestival.com/">The Victoria Django Festival</a></td>
+                      <td>End of March</td>
+                      <td>Canada</td>
+                      <td>Victoria (CA)</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.nepalgypsyjazz.com/">Nepal Gypsy Jazz Festival</a></td>
+                      <td>End of March</td>
+                      <td>Nepal</td>
+                      <td>Kathmandu (NP)</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/GypsyJazzFestivalColorado/">GypsyJazz Festival Colorado</a></td>
+                      <td>End of April</td>
+                      <td>USA</td>
+                      <td>Estes Park</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.djangoreinhardt.it/">Associazione Jazz Manouche Django Reinhardt</a></td>
+                      <td>End of April</td>
+                      <td>Italy</td>
+                      <td>Turin</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.welcome-in-tziganie.com/">Welcome in Tziganie</a></td>
+                      <td>End of April</td>
+                      <td>France</td>
+                      <td>Seissan</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.djangoagogo.com">Django A GoGo</a></td>
+                      <td>End of April</td>
+                      <td>USA</td>
+                      <td>Maplewood (NJ)</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.djangofest.com/djangofest-mill-valley-2017/">Djangofest Mill Valley</a></td>
+                      <td>End of April</td>
+                      <td>USA</td>
+                      <td>Mill Valley</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.gjflondon.com/">The GypsyJazz Festival of London</a></td>
+                      <td>May</td>
+                      <td>UK</td>
+                      <td>London</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/festivaldjangoargentina/photos/rpp.363388067047237/1826986170687412/?type=3&amp;theater">jazz Django argentine</a></td>
+                      <td>Early May</td>
+                      <td>Argentina</td>
+                      <td>Buenos Aires</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.musicscool.fr">Jazz à Pref’</a></td>
+                      <td>Mid May</td>
+                      <td>France</td>
+                      <td>Préfailles</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.gypsyjazztage.de/">Gypsy Jazz Days Munich</a></td>
+                      <td>Mid May</td>
+                      <td>Germany</td>
+                      <td>Munich</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/136714677173391/">Raduno Jazz Manouche</a></td>
+                      <td>Mid May</td>
+                      <td>Italy</td>
+                      <td>Procida</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangoliberchies.be/">Festival Django Liberchies</a></td>
+                      <td>Mid May</td>
+                      <td>Belgium</td>
+                      <td>Liberchies</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.jazzfestivalforbach.fr">Jazz festival Forbach</a></td>
+                      <td>Early June</td>
+                      <td>France</td>
+                      <td>Forbach</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/milanodjangofestival/">Milano Django festival</a></td>
+                      <td>Early June</td>
+                      <td>Italy</td>
+                      <td>Milano</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangoinjune.com/">Django in June</a></td>
+                      <td>Mid June</td>
+                      <td>USA</td>
+                      <td>Northampton</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.django-reinhardt-festival.eu/">Django Reinhardt Memorial Augsburg</a></td>
+                      <td>Mid June</td>
+                      <td>Germany</td>
+                      <td>Augsburg</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="www.festivaljazzmanouche.org">Jazz à Zilli</a></td>
+                      <td>Mid June</td>
+                      <td>France</td>
+                      <td>Zillisheim</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.festivaldespuces.com/">Festival des Puces</a></td>
+                      <td>Mid June</td>
+                      <td>France</td>
+                      <td>Paris 18</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/DjangoVegas/">DjangoVegas</a></td>
+                      <td>Mid June</td>
+                      <td>USA</td>
+                      <td>Las Vegas</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.sintimusic.nl/sinti-jazz-guitar-camp-2018/">Sinti Jazz Guitar Camp</a></td>
+                      <td>End of June</td>
+                      <td>Netherlands</td>
+                      <td>Gerwen (NL)</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.festivaldjangoreinhardt.com/">Festival Django Reinhardt - Samois-sur-Seine</a></td>
+                      <td>Early July</td>
+                      <td>France</td>
+                      <td>Samois-Sur-Seine</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/Paris-Django-Camp-191381641273069/">Paris Django Camp</a></td>
+                      <td>Early July</td>
+                      <td>France</td>
+                      <td>Paris</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.djangobirdland.com/">Django Reinhardt NY Festival at Birdland</a></td>
+                      <td>Mid July</td>
+                      <td>USA</td>
+                      <td>New York City</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/pg/The-Vintage-Escape-206618813114175">The Vintage Escape festival</a></td>
+                      <td>Mid July</td>
+                      <td>UK</td>
+                      <td>Ledbury</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://festival-django-reinhardt.de/">Django Reinhardt Festival - Hildesheim</a></td>
+                      <td>Mid July</td>
+                      <td>Germany</td>
+                      <td>Hildesheim</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/1836461403237195/">The Los Angeles Django Reinhardt Festival</a></td>
+                      <td>Mid July</td>
+                      <td>USA</td>
+                      <td>Los Angeles</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.marchmanouche.co.uk/django-camp-2018.html">Django Camp</a></td>
+                      <td>End of July</td>
+                      <td>UK</td>
+                      <td>Menai Bridge</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.festivalmazeres.fr">Manouch&#39; Muzik Festival</a></td>
+                      <td>Mid August</td>
+                      <td>France</td>
+                      <td>Mazeres</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/1126712430797017/">Grappelli-Django Camp</a></td>
+                      <td>End of August</td>
+                      <td>Netherlands</td>
+                      <td>De Glind</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.jazzaulac.com/">Jazz au Lac</a></td>
+                      <td>End of August</td>
+                      <td>France</td>
+                      <td>Saint-Vincent-sur-Graon</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/1943532989193141/">Gypsy Days</a></td>
+                      <td>End of August</td>
+                      <td>Denmark</td>
+                      <td>Follenslev</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.radunomanouche.it/">Raduno Mediterraneo - Jazz Manouche</a></td>
+                      <td>End of August</td>
+                      <td>Italy</td>
+                      <td>Petralia</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/djangoreinhardtfest/">Django Reinhardt Fest - Tilburg</a></td>
+                      <td>End of August</td>
+                      <td>Netherlands</td>
+                      <td>Tilburg</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangojamboree.com/">Django Jamboree</a></td>
+                      <td>Early September</td>
+                      <td>USA</td>
+                      <td>Louisville</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/1943532989193141/">Chicago Gypsy Jazz Festival</a></td>
+                      <td>Mid September</td>
+                      <td>USA</td>
+                      <td>Chicago</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://django-festival.com">Dajngo Festival Colombia</a></td>
+                      <td>Mid September</td>
+                      <td>Clombia</td>
+                      <td>Medellín</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.djangofestnw.com/">Djangofest North West</a></td>
+                      <td>Mid September</td>
+                      <td>USA</td>
+                      <td>Whidbey Island</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/events/1580843758884168/">Samois Sur Ticino</a></td>
+                      <td>End of September</td>
+                      <td>Italy</td>
+                      <td>Giussago</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangosurlennon.com/">Django sur Lennon</a></td>
+                      <td>End of September</td>
+                      <td>Ireland</td>
+                      <td>Ramelton</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/djangofest.greece/">Djangofest Athens</a></td>
+                      <td>End of September</td>
+                      <td>Greece</td>
+                      <td>Athens</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.djangofestaustin.com/">Austin Django Festival</a></td>
+                      <td>End of September</td>
+                      <td>USA</td>
+                      <td>Austin</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.djangobythesea.com/">Django by the Sea</a></td>
+                      <td>Early October</td>
+                      <td>USA</td>
+                      <td>Portsmouth</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.hotclubdepiracicaba.com.br/">Festival de Jazz Manouche Piracicaba</a></td>
+                      <td>Mid October</td>
+                      <td>Brasil</td>
+                      <td>Piracicaba</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/Django-Reinhardt-Gipsy-Festival-NL-282608375428012/">Django Reinhardt Gipsy Festival NL</a></td>
+                      <td>Mid October</td>
+                      <td>Netherlands</td>
+                      <td>The Hague</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/pg/festivaldejazzmanouche">Festival de Jazz Manouche de Piracicaba</a></td>
+                      <td>Mid October</td>
+                      <td>Brazil</td>
+                      <td>Piracicaba</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://djangotokyofestival.com/">Django Tokyo Festival</a></td>
+                      <td>End of October</td>
+                      <td>Japan</td>
+                      <td>Tokyo</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://gitarrehamburg.de/hamburger-gitarrenfestival/kuenstler/">Hamburg Guitar Festival</a></td>
+                      <td>End of October</td>
+                      <td>Germany</td>
+                      <td>Hamburg</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/StLouisGypsyJazzFestival/">St. Louis Gypsy Jazz Festival</a></td>
+                      <td>End of October</td>
+                      <td>USA</td>
+                      <td>St. Louis</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.butejazz.com/">Bute Manouche</a></td>
+                      <td>End of October</td>
+                      <td>UK</td>
+                      <td>Isle of Bute</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="https://www.facebook.com/DjangoLH/">Django l&#39;H</a></td>
+                      <td>Mid November</td>
+                      <td>Spain</td>
+                      <td>Barcelona (ES)</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.ozmanouche.com/">OZ Manouche</a></td>
+                      <td>End of November</td>
+                      <td>Australia</td>
+                      <td>Brisbane</td>
+                    </tr>
+                    <tr>
+                      <td><a target="_blank" href="http://www.pennabillidjangofestival.com/">Pennabilli Django Festival</a></td>
+                      <td>End of December</td>
+                      <td>Italy</td>
+                      <td>Pennabilli</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          <!-- Scroll-down link to next section -->
+          <a href="#contact" class="btn btn-circle js-scroll-trigger">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section contact-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Me</h2>
+            <p>
+              Your Gypsy Jazz event isn't listed here? 
+              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScmi0kic4pbrWH-cy1cuQHT1X1m6z4us8bc0ctGFk_fvjb-FA/viewform?usp=sf_link">Fill in this form</a> 
+              and I will add it!<br />
+              Or if you've noticed something wrong, <script>mail2("thomas.bouttaz+gjevents","gmail",0,"","send me an email.")</script><br />
+              I can also help you setup a website to advertise your event <i class="fa fa-smile-o"></i>
+            </p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://twitter.com/LaBouboutte" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <!-- <li class="list-inline-item">
+                <a target="_blank" href="https://github.com/tbouttaz/GypsyJazzAgenda" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Gypsy Jazz Events 2020</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+
+</html>
